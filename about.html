@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>About</h1>
+    <a href="index.html">Home</a>
+
+    <table>
+        <caption>Opening hours</caption> <!-- Táblázat címe-->
+        <thead> <!--táblázat fejléce (Table header-->
+            <tr>
+                <th>Day</th> <!--táblázat fejlécének egy egy cellája-->
+                <th>Open</th>
+                <th>Close</th>
+            </tr>
+        </thead>
+        <tbody> <!--Táblázat adatokat tartalmazza-->
+
+        <tr> <!--táblázat egy sora-->
+            <td>Monday - Friday</td> <!--táblázat egy oszlopa-->
+            <td>09:00</td>
+            <td rowspan="2">21:00</td> <!--cellákat von össze a rawspan parancs, a szám pedig a magasságot jelenti-->
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>10:00</td>            
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td colspan="2">closed</td> <!--colspan vízszintes összevonás-->
+            </tr>
+    </tbody>
+    <tfoot> <!--táblázat lábléce,ahova mindenféle megjegyzést tudunk tenni-->
+        <tr>
+            <td colspan="3">
+                &copy; 2019 <!-- copyright--> 
+            </td>
+    </tfoot>
+    </table>
+</body>
+
+</html>
